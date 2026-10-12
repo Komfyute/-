@@ -1,2 +1,5 @@
 main :: IO ()
-main = putStrLn "Hello, world!"
+main = do
+  putStrLn "What is your name?"
+  name <- getLine
+  putStrLn ("Hello, " ++ name ++ "!")
